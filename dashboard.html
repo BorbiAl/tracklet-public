@@ -217,7 +217,7 @@
     const token = localStorage.getItem('token') || new URLSearchParams(window.location.search).get('token');
     
     if (!token) {
-      window.location.href = '/login.html';
+      window.location.href = 'tracklet-public/login.html';
     } else if (window.location.search.includes('token=')) {
       // Store token from URL and clean URL
       localStorage.setItem('token', token);
@@ -269,3 +269,4 @@
   </script>
 </body>
 </html>
+
